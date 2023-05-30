@@ -3,3 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html,
+body {
+  font-family: "Lora", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "League Gothic", sans-serif;
+}
+
+@font-face {
+  font-family: "League Gothic";
+  font-weight: 400;
+  src: url("../LeagueGothic/static/WOFF2/LeagueGothic-Regular.woff2")
+      format("woff2"),
+    url("../LeagueGothic/static/WOFF/LeagueGothic-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "League Gothic";
+  font-weight: 400;
+  src: url("../LeagueGothic/static/WOFF2/LeagueGothic-Italic.woff2")
+      format("woff2"),
+    url("../LeagueGothic/static/WOFF/LeagueGothic-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "League Gothic";
+  font-weight: 400;
+  src: url("../LeagueGothic/static/WOFF2/LeagueGothic-CondensedItalic.woff2")
+      format("woff2"),
+    url("../LeagueGothic/static/WOFF/LeagueGothic-CondensedItalic.woff")
+      format("woff");
+}
+@font-face {
+  font-family: "League Gothic";
+  font-weight: 400;
+  src: url("../LeagueGothic/static/WOFF2/LeagueGothic-Condensed.woff2")
+      format("woff2"),
+    url("../LeagueGothic/static/WOFF/LeagueGothic-Condensed.woff")
+      format("woff");
+}
