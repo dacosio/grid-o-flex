@@ -49,3 +49,8 @@ h6 {
     url("../LeagueGothic/static/WOFF/LeagueGothic-Condensed.woff")
       format("woff");
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}

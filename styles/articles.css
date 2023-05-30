@@ -1,0 +1,22 @@
+.article-wrapper {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.article-wrapper article {
+  /* FLEX CHILDREN */
+  flex-basis: calc(50% - 0.5rem);
+
+  /* Start at 45%, but grow to fill remaining space
+  This means that the gap can change without problem. */
+  flex-basis: 45%;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 468px) {
+  .article-wrapper article {
+    flex-basis: 30%;
+  }
+}
