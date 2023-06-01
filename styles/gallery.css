@@ -22,3 +22,50 @@ figcaption {
     text-align: center;
     padding-bottom: 16px;
 }
+
+@media screen and (min-width: 550px) {
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.title-wrapper {
+    grid-column: 1/-1;
+}
+
+figcaption {
+    padding: 0;
+}
+}
+
+@media screen and (min-width: 700px) {
+    .gallery-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 850px) {
+    .gallery-wrapper {
+        grid-template-columns: repeat(5, 1fr);
+    }
+.title-wrapper {
+    grid-column: 1;
+    grid-row: 1/5;
+    border-right: 3px solid black;
+}
+  }
+
+
+  @media screen and (min-width: 1500px) {
+    .gallery-wrapper {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .title-wrapper {
+        grid-column: 1;
+        grid-row: 1/4;
+        border-right: 3px solid black;
+    }
+  }
+  
