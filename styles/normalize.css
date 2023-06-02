@@ -7,14 +7,12 @@
 html,
 body {
   font-family: "Lora", serif;
+  padding: 0.25rem;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: "League Gothic", sans-serif;
 }
 
@@ -26,31 +24,18 @@ h6 {
     url("../LeagueGothic/static/WOFF/LeagueGothic-Regular.woff") format("woff");
 }
 
-@font-face {
-  font-family: "League Gothic";
-  font-weight: 400;
-  src: url("../LeagueGothic/static/WOFF2/LeagueGothic-Italic.woff2")
-      format("woff2"),
-    url("../LeagueGothic/static/WOFF/LeagueGothic-Italic.woff") format("woff");
-}
-@font-face {
-  font-family: "League Gothic";
-  font-weight: 400;
-  src: url("../LeagueGothic/static/WOFF2/LeagueGothic-CondensedItalic.woff2")
-      format("woff2"),
-    url("../LeagueGothic/static/WOFF/LeagueGothic-CondensedItalic.woff")
-      format("woff");
-}
-@font-face {
-  font-family: "League Gothic";
-  font-weight: 400;
-  src: url("../LeagueGothic/static/WOFF2/LeagueGothic-Condensed.woff2")
-      format("woff2"),
-    url("../LeagueGothic/static/WOFF/LeagueGothic-Condensed.woff")
-      format("woff");
-}
-
 img {
   max-width: 100%;
   height: auto;
+}
+
+hr {
+  height: 3px;
+  border-width: 0;
+  color: black;
+  background-color: black;
+}
+
+section {
+  margin-bottom: 3rem;
 }

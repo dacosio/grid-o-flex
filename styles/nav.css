@@ -2,10 +2,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 header h1 {
-  font-size: clamp(2rem, 10vw, 468px);
+  font-size: clamp(2rem, 8vw, 1024px);
+  padding-bottom: 2rem;
 }
 
 nav ul {
@@ -13,9 +16,6 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-evenly;
-  justify-content: space-between;
-
   justify-content: space-around;
   gap: 0.5em;
 }
@@ -26,7 +26,8 @@ header a {
 header a:not(nav a) {
   text-decoration: none;
 }
-@media screen and (min-width: 468px) {
+
+@media screen and (min-width: 550px) {
   header {
     flex-direction: row;
     justify-content: space-between;
