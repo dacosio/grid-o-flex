@@ -1,8 +1,8 @@
 .sidebar-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  padding: 40px 0;
+  padding: 40px 20px;
   margin: auto;
   justify-content: center;
 }
@@ -45,7 +45,20 @@ footer h2 {
   text-decoration: none;
 }
 
-@media screen and (min-width: 700px) {
+/* small */
+@media screen and (min-width: 550px) {
+  .sidebar-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  footer {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .sidebar-wrapper {
     display: flex;
     padding: 0 60px;
@@ -58,5 +71,9 @@ footer h2 {
 
   .item ul {
     align-self: end;
+  }
+
+  footer {
+    padding: 28px 0;
   }
 }
