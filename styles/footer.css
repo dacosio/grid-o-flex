@@ -1,14 +1,15 @@
 .sidebar-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   gap: 1rem;
   padding: 40px 0;
   margin: auto;
   justify-content: center;
 }
 
-.sidebar-wrapper h2 {
+.sidebar-wrapper .item h3 {
   padding-bottom: 16px;
+  font-size: 1.7rem;
 }
 
 .sidebar-wrapper .item li {
@@ -23,6 +24,10 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+footer h2 {
+  font-size: clamp(1rem, 7vw, 1024px);
 }
 
 .top-wrapper {
@@ -43,11 +48,12 @@ footer {
 @media screen and (min-width: 700px) {
   .sidebar-wrapper {
     display: flex;
+    padding: 0 60px;
   }
   .sidebar-wrapper .item {
-    padding: 0 16px;
     display: flex;
     flex-flow: column-reverse nowrap;
+    padding: 0 4px;
   }
 
   .item ul {

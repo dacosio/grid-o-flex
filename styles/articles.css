@@ -10,12 +10,20 @@
   margin-bottom: 2rem;
 }
 
+.article-picture-wrapper p {
+  font-size: 0.8rem;
+}
+
 .article-picture-wrapper h3 {
   margin-bottom: 0.5rem;
 }
 
 /* small */
 @media screen and (min-width: 550px) {
+  .article-title-wrapper {
+    padding: 60px 0;
+  }
+  
   .article-picture-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -50,9 +58,9 @@
   }
 }
 
-/* largest */
+/* largest
 @media screen and (min-width: 1440px) {
   .article-picture-container {
     grid-template-columns: repeat(5, 1fr);
   }
-}
+} */

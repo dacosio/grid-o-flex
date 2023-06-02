@@ -34,4 +34,8 @@ header a:not(nav a) {
     align-items: center;
     padding: 0;
   }
+
+  header h1 {
+    padding-bottom: 0;
+  }
 }

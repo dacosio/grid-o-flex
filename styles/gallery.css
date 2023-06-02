@@ -11,6 +11,10 @@ figcaption {
   padding-bottom: 16px;
 }
 
+strong {
+  font-weight: 500;
+}
+
 /* small */
 @media screen and (min-width: 550px) {
   .gallery-picture-container {
@@ -21,6 +25,7 @@ figcaption {
 
   figcaption {
     padding: 0;
+    font-size: 0.8rem;
   }
 }
 
@@ -46,6 +51,6 @@ figcaption {
 /* largest */
 @media screen and (min-width: 1440px) {
   .gallery-picture-container {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
